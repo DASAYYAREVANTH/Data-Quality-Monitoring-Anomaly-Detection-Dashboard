@@ -27,7 +27,7 @@ function BeatChartContainer() {
 
       if (!allFileData) throw new Error("No file data found.");
 
-      if (allSavedData.length > 0) {
+      if (allSavedData && allSavedData.length > 0) {
         const jsonData = allSavedData[0].data;
 
         setAddBeatCoordinates(
